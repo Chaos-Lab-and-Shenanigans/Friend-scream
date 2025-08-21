@@ -1,3 +1,4 @@
+
 #include <windows.h>
 #include <shlobj.h>
 #include <stdio.h>
@@ -5,7 +6,7 @@
 #include <string.h>
 
 int limit = 300;
-void run_hidden_cmd(const char *cmd) {
+/*void run_hidden_cmd(const char *cmd) {
     if (!cmd || !cmd[0]) return; // Don't run empty commands
     STARTUPINFOA si = {0};
     PROCESS_INFORMATION pi = {0};
@@ -28,7 +29,7 @@ void run_hidden_cmd(const char *cmd) {
         CloseHandle(pi.hThread);
     }
     free(cmdline);
-}
+}*/
 int folder_exists(const char *fullPath) {
     char longPath[MAX_PATH * 4];
 
@@ -48,25 +49,19 @@ int folder_exists(const char *fullPath) {
 
 void create_cursed_folders(int num, const char *path) {
     for (int i = 0; i < num; i++) {
-        char file_path[500] = "";
-        sprintf(file_path, "\\\\?\\%s\\Cursed_%d.", path, i + 1);
-        if (folder_exists(file_path))   continue;
-        char cmd[600];
-        snprintf(cmd, sizeof(cmd),
-            "powershell -Command \"[System.IO.Directory]::CreateDirectory('%s')\"",
-    file_path);
-        run_hidden_cmd(cmd);
+        char folder_path[500] = "";
+        sprintf(folder_path, "\\\\?\\%s\\Cursed_%d.", path, i + 1);
+        if (folder_exists(folder_path))   continue;
+        CreateDirectoryA(folder_path, NULL);
     }
 }
 
 void delete_cursed_folders(const char *path) {
-    for (size_t i = 0; i < limit; i++) {
-            char file_path[500] = "";
-            sprintf(file_path, "\\\\?\\%s\\Cursed_%d.", path, i + 1);
-            if (!folder_exists(file_path))  continue;
-            char cmd[600];
-            snprintf(cmd, sizeof(cmd), "rd /S /Q %s", file_path);
-            run_hidden_cmd(cmd);
+    for (int i = 0; i < limit; i++) {
+            char folder_path[500] = "";
+            sprintf(folder_path, "\\\\?\\%s\\Cursed_%d.", path, i + 1);
+            if (!folder_exists(folder_path))  continue;
+            RemoveDirectoryA(folder_path);
     }
 }
 
