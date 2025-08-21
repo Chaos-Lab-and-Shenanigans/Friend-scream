@@ -1,6 +1,6 @@
 # **Friend Scream Simulator**
 
-## **Introduction (Funny Version)**
+## **Introduction**
 
 Ever wanted to test your friend's patience? Or maybe you just enjoy watching chaos unfold on their desktop? **Friend Scream Simulator** is here to make dreams come true!
 
@@ -17,9 +17,7 @@ Otherwise, *good luck deleting them manually*.
 
 ---
 
-## **How It Works (Normal Explanation)**
-
-### **Features**
+## **How It Works**
 
 * Creates a user-specified number of **cursed folders** on the desktop.
 * Each folder name ends with a `.` making it harder to delete through normal means.
@@ -60,50 +58,6 @@ Because life is too short not to make your friends question their sanity.
 
 ---
 
-# **EVIL MODE**
-
-## **What is Evil Mode?**
-
-Evil Mode is the **final boss** of pranks. When activated, your desktop becomes an unstoppable storm of cursed folders—appearing faster than you can scream **“AMOGUS!”**.
-
-It’s not just a prank… it’s **chaos personified**.
-
----
-
-## **How It Works**
-
-* When you enter the special number `666` in the lucky number prompt, Evil Mode activates.
-* The program will start creating **cursed folders every second**.
-* Each cursed folder ends with a dot (`.`) making it harder to delete.
-* Each folder contains an `amogus.txt` file with a lovely message inside.
-* The process **never stops**—you’ll have to force shut down the system or kill the process.
-
-**Pro tip:** Run this in a Virtual Machine unless you enjoy reinstalling Windows.
-
-
----
-
-## **Demo Behavior**
-
-* **Normal Mode:** Creates N cursed folders and stops.
-* **Delete Mode (-143):** Deletes all cursed folders.
-* **Evil Mode (666):** Creates cursed folders FOREVER until PC chokes.
-
----
-
-## **Why Does This Exist?**
-
-Because normal chaos wasn’t enough.
-
----
-
-## **Important Warnings**
-
-* DO NOT use this on your main PC.
-* DO NOT use on someone without consent (unless you like lawsuits).
-* ONLY test in a virtual machine or on a disposable system.
-
----
 
 ## **Extra Fun Prank Ideas**
 
