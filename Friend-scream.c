@@ -200,20 +200,12 @@ int main() {
     while (1) {
         lucky = get_lucky_number(NULL);
         if (lucky == 0) break; // Cancel or close
-        if ((lucky >= 10 && lucky <= limit) || lucky == -143 || lucky == 666) break;
+        if ((lucky >= 10 && lucky <= limit) || lucky == -143) break;
         char msg[100] = "";
         sprintf(msg, "Please enter a positive number between 10 and %d.", limit);
         MessageBoxA(NULL, msg, "Invalid Input", MB_ICONWARNING);
     }
-    if (lucky == 666) { // The Devil's Number
-    MessageBoxA(NULL, "You unlocked EVIL MODE!\nSay goodbye to your desktop.", "Evil Mode Activated", MB_ICONERROR);
-    while (1) {
-        create_amogus_folders(10, desktop); // Create 10 cursed folders every 10 seconds
-        Sleep(10000);
-    }
-}
-
-
+    
     if (lucky == -143) {
         delete_amogus_folders(desktop);
         MessageBoxA(NULL, "Deleted cursed folders.\nShare with your friends and see them suffer like you did.\n", "Done", MB_OK | MB_ICONINFORMATION);
@@ -225,4 +217,5 @@ int main() {
     }
     return 0;
 }
+
 
