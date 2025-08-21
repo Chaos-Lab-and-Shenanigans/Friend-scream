@@ -1,1 +1,130 @@
-# Friend-scream
+# **Friend Scream Simulator**
+
+## **Introduction (Funny Version)**
+
+Ever wanted to test your friend's patience? Or maybe you just enjoy watching chaos unfold on their desktop? **Friend Scream Simulator** is here to make dreams come true!
+
+Simply put:
+
+* Enter your *lucky number*.
+* Sit back and watch as your friend's desktop gets *graced* with dozens (or hundreds) of cursed folders ending with a dot `.` — those infamous little demons that Windows hates to delete.
+* Oh, and inside each cursed folder? A friendly little note: **"You're totally fked!"**.
+
+Feeling merciful? Enter the **secret code** to **undo the madness**.
+Otherwise, *good luck deleting them manually*.
+
+**Disclaimer:** This tool is for **fun and pranks**. Do not use it on people who can’t take a joke. Also, don’t blame us if your friend stops talking to you.
+
+---
+
+## **How It Works (Normal Explanation)**
+
+### **Features**
+
+* Creates a user-specified number of **cursed folders** on the desktop.
+* Each folder name ends with a `.` making it harder to delete through normal means.
+* Each folder contains a text file named `amogus.txt` with a message inside.
+* Includes a **GUI prompt** for user input.
+* Special code `-143` deletes all previously created cursed folders.
+
+### **Requirements**
+
+* Windows OS
+* A sense of humor
+* C Compiler (e.g., MSVC or MinGW)
+
+### **Compilation**
+
+Compile with any C compiler that supports Windows API:
+
+```bash
+gcc friend_scream.c -o friend_scream.exe -mwindows
+```
+
+Or if using MSVC:
+
+```bash
+cl friend_scream.c user32.lib shell32.lib
+```
+
+### **Usage**
+
+1. Run the executable.
+2. Enter a number between `10` and `500` in the prompt.
+3. Watch as that many cursed folders appear on your desktop.
+4. To remove them, run the program again and enter `-143`.
+
+## **Why This Exists**
+
+Because life is too short not to make your friends question their sanity.
+
+---
+
+# **EVIL MODE**
+
+## **What is Evil Mode?**
+
+Evil Mode is the **final boss** of pranks. When activated, your desktop becomes an unstoppable storm of cursed folders—appearing faster than you can scream **“AMOGUS!”**.
+
+It’s not just a prank… it’s **chaos personified**.
+
+---
+
+## **How It Works**
+
+* When you enter the special number `666` in the lucky number prompt, Evil Mode activates.
+* The program will start creating **cursed folders every second**.
+* Each cursed folder ends with a dot (`.`) making it harder to delete.
+* Each folder contains an `amogus.txt` file with a lovely message inside.
+* The process **never stops**—you’ll have to force shut down the system or kill the process.
+
+**Pro tip:** Run this in a Virtual Machine unless you enjoy reinstalling Windows.
+
+
+---
+
+## **Demo Behavior**
+
+* **Normal Mode:** Creates N cursed folders and stops.
+* **Delete Mode (-143):** Deletes all cursed folders.
+* **Evil Mode (666):** Creates cursed folders FOREVER until PC chokes.
+
+---
+
+## **Why Does This Exist?**
+
+Because normal chaos wasn’t enough.
+
+---
+
+## **Important Warnings**
+
+* DO NOT use this on your main PC.
+* DO NOT use on someone without consent (unless you like lawsuits).
+* ONLY test in a virtual machine or on a disposable system.
+
+---
+
+## **Extra Fun Prank Ideas**
+
+* **Set Delay Higher**
+  Increase the `delay` value in the code so the folders appear slowly… one… by… one… like a horror movie.
+
+* **Change Message Inside File**
+  Replace `"You're totally fked!"` with something spooky like:
+  *“I’m watching you…”* or
+  *“Run `-143` before midnight or else…”*.
+
+* **Make It a Chain Reaction**
+  Instead of deleting with `-143`, make it create **double the folders** when they try to remove them. Pure chaos mode.
+
+* **Rename the Program**
+  Name the executable something innocent like `GameSetup.exe` or `FreeRobux.exe` and send it to your friends (with their consent!).
+
+* **Infinite Mode (Extreme)**
+  Modify the loop to **never stop creating folders** until system crashes. (Not recommended unless you really hate someone or you’re running in a VM).
+
+* **Desktop Wallpaper Swap**
+  Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
+
