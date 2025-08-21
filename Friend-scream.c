@@ -5,31 +5,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-int limit = 300;
-/*void run_hidden_cmd(const char *cmd) {
-    if (!cmd || !cmd[0]) return; // Don't run empty commands
-    STARTUPINFOA si = {0};
-    PROCESS_INFORMATION pi = {0};
-    si.cb = sizeof(si);
-    si.dwFlags = STARTF_USESHOWWINDOW;
-    si.wShowWindow = SW_HIDE;
+int limit = 500;
+int delay = 250;
 
-    size_t len = strlen(cmd) + 20;
-    char *cmdline = (char*)malloc(len);
-    snprintf(cmdline, len, "cmd.exe /c \"%s\"", cmd);
-
-    BOOL success = CreateProcessA(
-        NULL, cmdline, NULL, NULL, FALSE, CREATE_NO_WINDOW,
-        NULL, NULL, &si, &pi
-    );
-
-    if (success) {
-        WaitForSingleObject(pi.hProcess, INFINITE);
-        CloseHandle(pi.hProcess);
-        CloseHandle(pi.hThread);
-    }
-    free(cmdline);
-}*/
 int folder_exists(const char *fullPath) {
     char longPath[MAX_PATH * 4];
 
@@ -47,21 +25,66 @@ int folder_exists(const char *fullPath) {
     return (attrs & FILE_ATTRIBUTE_DIRECTORY) != 0;
 }
 
+int create_amogus_file(char *path) {
+    char full_path[200] = "";
+    sprintf(full_path, "%s\\amogus.txt", path);
+    HANDLE hFile = CreateFileW(
+        L"amogus.txt", // extended path
+        GENERIC_WRITE,
+        0,
+        NULL,
+        CREATE_ALWAYS,
+        FILE_ATTRIBUTE_NORMAL,
+        NULL
+    );
+
+    if (hFile == INVALID_HANDLE_VALUE) {
+        printf("Error creating file: %lu\n", GetLastError());
+        return 1;
+    }
+
+    const char *data = "You're totally fked!";
+    DWORD bytesWritten;
+    WriteFile(hFile, data, (DWORD)strlen(data), &bytesWritten, NULL);
+
+    CloseHandle(hFile);
+    return 0;
+}
+
+int delete_amogus_file(const char *folderPath) {
+    char fullPath[MAX_PATH * 4]; // Extended buffer for \\?\ prefix
+
+    // Add \\?\ prefix for extended-length paths (important for cursed folders)
+    snprintf(fullPath, sizeof(fullPath), "\\\\?\\%s\\amogus.txt", folderPath);
+
+    if (DeleteFileA(fullPath)) {
+        printf("Deleted: %s\n", fullPath);
+        return 0; // Success
+    } else {
+        printf("Failed to delete %s. Error: %lu\n", fullPath, GetLastError());
+        return 1; // Failure
+    }
+}
+
 void create_cursed_folders(int num, const char *path) {
     for (int i = 0; i < num; i++) {
         char folder_path[500] = "";
-        sprintf(folder_path, "\\\\?\\%s\\Cursed_%d.", path, i + 1);
+        sprintf(folder_path, "\\\\?\\%s\\AMOGUS_%d.", path, i + 1);
         if (folder_exists(folder_path))   continue;
         CreateDirectoryA(folder_path, NULL);
+        create_amogus_file(folder_path);
+        Sleep(delay);
     }
 }
 
 void delete_cursed_folders(const char *path) {
     for (int i = 0; i < limit; i++) {
             char folder_path[500] = "";
-            sprintf(folder_path, "\\\\?\\%s\\Cursed_%d.", path, i + 1);
+            sprintf(folder_path, "\\\\?\\%s\\AMOGUS_%d.", path, i + 1);
             if (!folder_exists(folder_path))  continue;
+            delete_amogus_file(folder_path);
             RemoveDirectoryA(folder_path);
+            Sleep(delay);
     }
 }
 
@@ -77,7 +100,7 @@ LRESULT CALLBACK InputWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
     case WM_CREATE: {
         data = (DialogData*)((LPCREATESTRUCT)lParam)->lpCreateParams;
         char msg[100] = "";
-        sprintf(msg, "Enter your lucky number (1-%d):\r\n(Hint: The higher the better)", limit);
+        sprintf(msg, "Enter your lucky number (10-%d):\r\n(Hint: The higher the better)", limit);
         CreateWindowA("STATIC",
             msg,
             WS_CHILD | WS_VISIBLE | SS_CENTER,
