@@ -1,4 +1,4 @@
-
+#include "resource.h"
 #include <windows.h>
 #include <shlobj.h>
 #include <stdio.h>
@@ -150,11 +150,15 @@ LRESULT CALLBACK InputWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 int get_lucky_number(HWND hWnd) {
     const char CLASS_NAME[] = "LuckyInputClass";
-    WNDCLASSA wc = {0};
+    WNDCLASSEX wc = {0};
+    wc.cbSize = sizeof(WNDCLASSEX);
     wc.lpfnWndProc = InputWndProc;
     wc.hInstance = GetModuleHandle(NULL);
     wc.lpszClassName = CLASS_NAME;
-    RegisterClassA(&wc);
+    wc.hIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_ICON1));
+    wc.hIconSm = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_ICON1));
+    RegisterClassEx(&wc);
+
 
     DialogData data = {0};
 
