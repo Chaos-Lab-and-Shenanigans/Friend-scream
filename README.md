@@ -25,6 +25,12 @@ Otherwise, *good luck deleting them manually*.
 * Includes a **GUI prompt** for user input.
 * Special code `-143` deletes all previously created cursed folders.
 
+## **Files purpose**
+
+* **fs.ico**: The file containing the exe's icon and also title icon. You can convert any image file to ico format using online converters.
+* **resource.h**: This file contains the constant values.
+* **resource.rc**: Contains the layout and settings of windows that are displayed.
+* **FriendScream**: Contains the whole logic using above files.
 ### **Requirements**
 
 * Windows OS
@@ -36,19 +42,14 @@ Otherwise, *good luck deleting them manually*.
 Compile with any C compiler that supports Windows API:
 
 ```bash
-gcc friend_scream.c -o friend_scream.exe -mwindows
-```
-
-Or if using MSVC:
-
-```bash
-cl friend_scream.c user32.lib shell32.lib
+windres resource.rc -O coff -o resource.res
+gcc FriendScream.c resource.res -o FriendScream.exe -mwindows
 ```
 
 ### **Usage**
 
 1. Run the executable.
-2. Enter a number between `10` and `500` in the prompt.
+2. Enter a number between `10` and `300` in the prompt.
 3. Watch as that many cursed folders appear on your desktop.
 4. To remove them, run the program again and enter `-143`.
 
@@ -80,5 +81,6 @@ Because life is too short not to make your friends question their sanity.
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
