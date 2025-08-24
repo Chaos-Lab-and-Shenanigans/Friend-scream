@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int limit = 500;
+int limit = 300;
 int delay = 250;
 
 int folder_exists(const char *fullPath) {
@@ -213,9 +213,10 @@ int main() {
         char msg[500] = "";
         sprintf(msg, "Good luck deleting those %d folders on Desktop!\nYou're welcome.", lucky);
         MessageBoxA(NULL, msg, "Done", MB_OK | MB_ICONINFORMATION);
-        create_cursed_folders(lucky, desktop);
+        create_amogus_folders(lucky, desktop);
     }
     return 0;
 }
+
 
 
