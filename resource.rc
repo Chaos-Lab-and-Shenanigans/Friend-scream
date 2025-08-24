@@ -1,3 +1,17 @@
+#include <windows.h>
 #include "resource.h"
+
 IDI_ICON1 ICON "fs.ico"
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 220, 120
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Friend Scream Simulator"
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT       "Enter your lucky number (10-300):", IDC_STATIC, 10, 10, 200, 8
+    LTEXT       "[Hint: The higher the better]", IDC_STATIC, 10, 22, 200, 8
+    EDITTEXT    IDC_EDIT_NUMBER, 10, 36, 200, 14, WS_TABSTOP
+    PUSHBUTTON  "OK",     IDOK,    50, 60, 50, 14
+    PUSHBUTTON  "Cancel", IDCANCEL,120, 60, 50, 14
+END
 
