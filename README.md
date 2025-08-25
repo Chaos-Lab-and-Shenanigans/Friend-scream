@@ -18,6 +18,19 @@ Otherwise, *good luck deleting them manually*.
 
 ---
 
+## **Easy tweaks**
+- Change the limit variable's value to change the max limit easily.
+- Change the delay variable's value to change the speed at which folders spawn and delete(It is slow as to not be detetcted as a virus).
+### **Cautions**
+Spawning too many folders on desktop might delete the existing ones.  
+
+
+300 is safe limit tested on my side only  
+- **Lower** it if you want to be extra **safe**.
+- **Increase** it if you want **absolute destruction**.
+
+
+  
 ## **How It Works**
 
 * Creates a user-specified number of **cursed folders** on the desktop.
@@ -33,6 +46,10 @@ Otherwise, *good luck deleting them manually*.
 * **resource.h**: This file contains the constant values.
 * **resource.rc**: Contains the layout and settings of windows that are displayed.
 * **FriendScream**: Contains the whole logic using above files.
+
+You can also easily change icon using this [tool]()
+
+
 ### **Requirements**
 
 * Windows OS
@@ -83,6 +100,7 @@ Because life is too short not to make your friends question their sanity.
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
