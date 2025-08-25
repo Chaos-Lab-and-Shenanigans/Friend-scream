@@ -13,6 +13,7 @@
 - [Why This Exists](#why-this-exists)
 - [Easy tweaks](#easy-tweaks)
 - [Extra Fun Prank Ideas](#extra-fun-prank-ideas)
+- [Releases](https://github.com/404errorg6/Friend-scream/releases)
 ---
 ## **Introduction**
 
@@ -112,6 +113,7 @@ Because life is too short not to make your friends question their sanity.
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
