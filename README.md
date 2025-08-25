@@ -1,6 +1,17 @@
 # **Friend Scream Simulator**  
 
 ![icon](https://github.com/404errorg6/Friend-scream/blob/main/fs.ico)
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Cautions](#cautions)
+- [How It Works](#how-it-works)
+- [Files purpose](#files-purpose)
+  - [Requirements](#requirements)
+  - [Compilation](#compilation)
+  - [Usage](#usage)
+- [Why This Exists](#why-this-exists)
+---
 ## **Introduction**
 
 Ever wanted to test your friend's patience? Or maybe you just enjoy watching chaos unfold on their desktop? **Friend Scream Simulator** is here to make dreams come true!
@@ -99,6 +110,7 @@ Because life is too short not to make your friends question their sanity.
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
