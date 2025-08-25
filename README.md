@@ -67,8 +67,8 @@ Because life is too short not to make your friends question their sanity.
 * **Set Delay Higher**
   Increase the `delay` value in the code so the folders appear slowly… one… by… one… like a horror movie.
 
-* **Change Message Inside File**
-  Replace `"You're totally fked!"` with something spooky like:
+* **Change Message Inside Txt File**
+  Replace with something spooky like:
   *“I’m watching you…”* or
   *“Run `-143` before midnight or else…”*.
 
@@ -83,6 +83,7 @@ Because life is too short not to make your friends question their sanity.
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
