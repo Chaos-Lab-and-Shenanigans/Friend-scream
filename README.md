@@ -11,6 +11,8 @@
   - [Compilation](#compilation)
   - [Usage](#usage)
 - [Why This Exists](#why-this-exists)
+- [Easy tweaks](#easy-tweaks)
+- [Extra Fun Prank Ideas](#extra-fun-prank-ideas)
 ---
 ## **Introduction**
 
@@ -85,7 +87,7 @@ Because life is too short not to make your friends question their sanity.
 
 ---
 
-## **Easy tweaks**
+## **Easy Tweaks**
 - Change the limit variable's value to change the max limit easily.
 - Change the delay variable's value to change the speed at which folders spawn and delete(It is slow as to not be detetcted as a virus).
 
@@ -110,6 +112,7 @@ Because life is too short not to make your friends question their sanity.
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
