@@ -22,7 +22,8 @@ Otherwise, *good luck deleting them manually*.
 
 * Creates a user-specified number of **cursed folders** on the desktop.
 * Each folder name ends with a `.` making it harder to delete through normal means.
-* Each folder contains a text file named `amogus.txt` with a message inside.
+* Each folder contains a text file named `amogus.txt` with a message inside.(pretty useless since you can't open folders)
+* Creates a file at the end, named "**Delete-Desktop-Folders.txt**" but it doesn't contain the secret code. What does it contain? Only one way to find out! 
 * Includes a **GUI prompt** for user input.
 * Special code `-143` deletes all previously created cursed folders.
 
@@ -82,6 +83,7 @@ Because life is too short not to make your friends question their sanity.
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
