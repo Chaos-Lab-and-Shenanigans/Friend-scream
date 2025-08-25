@@ -9,7 +9,6 @@ Simply put:
 
 * Enter your *lucky number*.
 * Sit back and watch as your friend's desktop gets *graced* with dozens (or hundreds) of cursed folders ending with a dot `.` — those infamous little demons that Windows hates to delete.
-* Oh, and inside each cursed folder? A friendly little note: **"You're totally fked!"**.
 
 Feeling merciful? Enter the **secret code** to **undo the madness**.
 Otherwise, *good luck deleting them manually*.
@@ -18,10 +17,7 @@ Otherwise, *good luck deleting them manually*.
 
 ---
 
-## **Easy tweaks**
-- Change the limit variable's value to change the max limit easily.
-- Change the delay variable's value to change the speed at which folders spawn and delete(It is slow as to not be detetcted as a virus).
-### **Cautions**
+## **Cautions**
 Spawning too many folders on desktop might delete the existing ones.  
 
 
@@ -78,6 +74,9 @@ Because life is too short not to make your friends question their sanity.
 
 ---
 
+## **Easy tweaks**
+- Change the limit variable's value to change the max limit easily.
+- Change the delay variable's value to change the speed at which folders spawn and delete(It is slow as to not be detetcted as a virus).
 
 ## **Extra Fun Prank Ideas**
 
@@ -100,6 +99,7 @@ Because life is too short not to make your friends question their sanity.
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
