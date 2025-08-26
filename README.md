@@ -57,7 +57,7 @@ Spawning too many folders on desktop might delete the existing ones.
 * **resource.rc**: Contains the layout and settings of windows that are displayed.
 * **FriendScream**: Contains the whole logic using above files.
 
-You can also easily change icon using this [tool]()
+You can also easily change icon using this [tool](https://github.com/Seabreg/resource_hacker)
 
 
 ### **Requirements**
@@ -113,6 +113,7 @@ Because life is too short not to make your friends question their sanity.
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
