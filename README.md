@@ -30,9 +30,9 @@ Spawning too many folders on desktop might delete the existing ones.
 
 ### **Requirements**
 
-* Windows OS
-* A sense of humor
-* C Compiler (e.g., MSVC or MinGW)
+* Windows OS.
+* A sense of humor.
+* Friend you wanna hear scream of.
 
 ### **Usage**
 
@@ -108,6 +108,7 @@ gcc FriendScream.c resource.res -o FriendScream.exe -mwindows
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
