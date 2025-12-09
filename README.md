@@ -57,7 +57,9 @@ Spawning too many folders on desktop might delete the existing ones.
 * Includes a **GUI prompt** for user input.
 * Special code `-143` deletes all previously created cursed folders.
 
-## **Files purpose**
+## Developer section  
+
+**Files purpose**
 
 * **fs.ico**: The file containing the exe's icon and also title icon. You can convert any image file to ico format using online converters.
 * **resource.h**: This file contains the constant values.
@@ -68,7 +70,7 @@ You can also easily change icon using this [tool](https://github.com/Seabreg/res
 
 
 
-### **Compilation**
+**Compilation**
 
 Compile with any C compiler that supports Windows API:
 
@@ -110,6 +112,7 @@ Because life is too short not to make your friends question their sanity.
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
