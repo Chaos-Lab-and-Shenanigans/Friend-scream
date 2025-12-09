@@ -1,19 +1,12 @@
 # **Friend Scream Simulator**  
 
 ![icon](https://github.com/404errorg6/Friend-scream/blob/main/fs.ico)
-## Table of Contents
+## 📄 Table of Contents
 
-- [Introduction](#introduction)
-- [Cautions](#cautions)
-- [How It Works](#how-it-works)
-- [Files purpose](#files-purpose)
-  - [Requirements](#requirements)
-  - [Compilation](#compilation)
-  - [Usage](#usage)
-- [Why This Exists](#why-this-exists)
-- [Easy tweaks](#easy-tweaks)
-- [Extra Fun Prank Ideas](#extra-fun-prank-ideas)
-- [Releases](https://github.com/404errorg6/Friend-scream/releases)
+* [Introduction](#introduction)
+* [Usage](#usage)
+* [Developer section](#developer-section)
+* [Releases](https://github.com/404errorg6/Friend-scream/releases)
 ---
 ## **Introduction**
 
@@ -47,8 +40,17 @@ Spawning too many folders on desktop might delete the existing ones.
 2. Enter a number between `10` and `300` in the prompt.
 3. Watch as that many cursed folders appear on your desktop.
 4. To remove them, run the program again and enter `-143`.
-  
-## **How It Works**
+
+## **Why This Exists**
+
+Because life is too short not to make your friends question their sanity.
+
+---
+
+
+## Developer section  
+
+**How It Works**
 
 * Creates a user-specified number of **cursed folders** on the desktop.
 * Each folder name ends with a `.` making it harder to delete through normal means.
@@ -56,8 +58,6 @@ Spawning too many folders on desktop might delete the existing ones.
 * Creates a file at the end, named "**Delete-Desktop-Folders.txt**" but it doesn't contain the secret code. What does it contain? Only one way to find out! 
 * Includes a **GUI prompt** for user input.
 * Special code `-143` deletes all previously created cursed folders.
-
-## Developer section  
 
 **Files purpose**
 
@@ -81,17 +81,13 @@ gcc FriendScream.c resource.res -o FriendScream.exe -mwindows
 
 
 
-## **Why This Exists**
 
-Because life is too short not to make your friends question their sanity.
 
----
-
-## **Easy Tweaks**
+**Easy Tweaks**
 - Change the `limit` variable's value to change the max limit easily.
 - Change the `delay` variable's value to change the speed at which folders spawn and delete(It is slow as to not be detetcted as a virus).
 
-## **Extra Fun Prank Ideas**
+**Extra Fun Prank Ideas**
 
 * **Set Delay Higher**
   Increase the `delay` value in the code so the folders appear slowly… one… by… one… like a horror movie.
@@ -112,6 +108,7 @@ Because life is too short not to make your friends question their sanity.
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
