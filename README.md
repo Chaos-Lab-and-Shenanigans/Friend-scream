@@ -33,13 +33,20 @@ Otherwise, *good luck deleting them manually*.
 
 ## **Cautions**
 Spawning too many folders on desktop might delete the existing ones.  
+300 is safe limit.  
 
+### **Requirements**
 
-300 is safe limit tested on my side only  
-- **Lower** it if you want to be extra **safe**.
-- **Increase** it if you want **absolute destruction**.
+* Windows OS
+* A sense of humor
+* C Compiler (e.g., MSVC or MinGW)
 
+### **Usage**
 
+1. Run the executable.
+2. Enter a number between `10` and `300` in the prompt.
+3. Watch as that many cursed folders appear on your desktop.
+4. To remove them, run the program again and enter `-143`.
   
 ## **How It Works**
 
@@ -60,11 +67,6 @@ Spawning too many folders on desktop might delete the existing ones.
 You can also easily change icon using this [tool](https://github.com/Seabreg/resource_hacker)
 
 
-### **Requirements**
-
-* Windows OS
-* A sense of humor
-* C Compiler (e.g., MSVC or MinGW)
 
 ### **Compilation**
 
@@ -75,12 +77,7 @@ windres resource.rc -O coff -o resource.res
 gcc FriendScream.c resource.res -o FriendScream.exe -mwindows
 ```
 
-### **Usage**
 
-1. Run the executable.
-2. Enter a number between `10` and `300` in the prompt.
-3. Watch as that many cursed folders appear on your desktop.
-4. To remove them, run the program again and enter `-143`.
 
 ## **Why This Exists**
 
@@ -106,13 +103,14 @@ Because life is too short not to make your friends question their sanity.
   Instead of deleting with `-143`, make it create **double the folders** when they try to remove them. Pure chaos mode.
 
 * **Rename the Program**
-  Name the executable something innocent like `GameSetup.exe` or `FreeRobux.exe` and send it to your friends (with their consent!).
+  Name the executable something innocent like `GameSetup.exe` or `FreeRobux.exe` and send it to your friends.
 
 * **Infinite Mode (Extreme)**
   Modify the loop to **never stop creating folders** until system crashes. (Not recommended unless you really hate someone or you’re running in a VM).
 
 * **Desktop Wallpaper Swap**
   Combine this with a script that changes their wallpaper to something like *"AMOGUS IS COMING"* after the folders appear.
+
 
 
 
